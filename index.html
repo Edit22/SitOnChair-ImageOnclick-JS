@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitOnChair-Onclick</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <section class="header__buttons">
+            
+            <button onclick="changeImage('black_chair.png')" class="header__buttons-arrow-left"><a href="#"><i class="fa fa-angle-left" style="font-size:100px"></i></a>
+            </button>
+        </section>
+    
+
+        <section class="header__chair">
+            <img id="headerImage" src="black_chair.png">
+
+        </section>
+
+        <section class="header__text">
+            <h1 class="header__text-h1">Sit on our chair</h1>
+            <p class="header__text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, facilis velit illum necessitatibus in temporibus obcaecati deleniti sunt pariatur illo perferendis quae.</p>
+            <button class="header__text-button"><a>More info</a></button>
+
+        </section>
+
+        <section class="header__buttons">
+            <button onclick="changeImage('red_chair.png')" class="header__buttons-arrow-right"><a href="#"><i class="fa fa-angle-right" style="font-size:100px"></i></a>
+            </button>
+          
+        </section>
+
+    </header>
+    <script>
+
+function changeImage(fileName){
+    let img = document.querySelector('#headerImage');
+    img.setAttribute('src', fileName);
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
